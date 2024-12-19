@@ -19,8 +19,6 @@ WORKDIR /app
 COPY --from=build-env /app/out .
 
 # Указываем порт, который будет использоваться контейнером
-EXPOSE 80
-EXPOSE 443
-
+ENV ASPNETCORE_HTTP_PORTS 80
 # Команда по умолчанию для запуска приложения
 ENTRYPOINT ["dotnet", "database-service.dll"]
