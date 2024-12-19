@@ -3,7 +3,7 @@
 # Установим рабочую директорию внутри контейнера
 WORKDIR /app
 EXPOSE 80
-COPY . ./
+COPY . ../
 WORKDIR /app
 
 RUN dotnet restore
