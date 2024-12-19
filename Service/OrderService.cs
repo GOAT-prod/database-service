@@ -28,7 +28,7 @@ public class OrderService(IOrderRepository orderRepository, ICartRepository cart
             DeliveryDate = default,
             Username = user.Username,
             TotalWeight = productItemsInfo.Select(i => i.Weight).Sum(),
-            TotalPrice = orderingCartItems.Select(i => i.Price).Sum()
+            TotalPrice = orderingCartItems.Select(i => i.Price * i.SelectCount).Sum()
         };
         
         _ = await orderRepository.AddOrder(order, userId);
