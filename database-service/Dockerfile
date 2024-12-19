@@ -4,10 +4,10 @@
 WORKDIR /app
 EXPOSE 80
 COPY . ./
-WORKDIR /app/databse-service
+WORKDIR /app/database-service
 
 RUN dotnet restore
-RUN dotnet publish -c Release -o out
+RUN dotnet publish -c Release -o /app/out
 
 # Создаем финальный образ на основе runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 
@@ -19,8 +19,8 @@ WORKDIR /app
 COPY --from=build-env /app/out .
 
 # Указываем порт, который будет использоваться контейнером
-EXPOSE 80
-EXPOSE 443
-
+ENV ASPNETCORE_HTTP_PORTS 80
+ENV ASPNETCORE_URLS=http://+:80
+EXPOSE 8080
 # Команда по умолчанию для запуска приложения
 ENTRYPOINT ["dotnet", "database-service.dll"]
