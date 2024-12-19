@@ -218,5 +218,11 @@ namespace Repository.Scripts {
                 return ResourceManager.GetString("UpdateUser", resourceCulture);
             }
         }
+        
+        internal static string GetAllMaterials {
+            get {
+                return ResourceManager.GetString("GetAllMaterials", resourceCulture);
+            }
+        }
     }
 }

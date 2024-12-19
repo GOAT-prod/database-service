@@ -7,4 +7,6 @@ public class ProductItem
     public string Color { get; set; } = string.Empty;
     public int Size { get; set; }
     public decimal Weight { get; set; }
+    
+    public int Count { get; set; }
 }
