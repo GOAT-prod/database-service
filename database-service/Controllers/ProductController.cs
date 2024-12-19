@@ -11,6 +11,9 @@ public class ProductController(IProductService productService) : ControllerBase
     [HttpGet("/products")]
     public async Task<List<Product>> GetProducts() => await productService.GetProducts();
     
+    [HttpGet("/products/{id}")]
+    public async Task<List<Product>> GetProductByFactoryId(int id) => await productService.GetProductByFactoryId(id);
+    
     [HttpPost("/product")]
     public async Task<bool> AddProduct([FromBody] Product product) => await productService.AddProduct(product);
     

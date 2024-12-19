@@ -5,4 +5,5 @@ select p.id     as Id,
        p.price  as Price,
        p.status as Status
 from product p
-         join client c on c.id = p.factory_id;
+         join client c on c.id = p.factory_id
+where c.id = @id;

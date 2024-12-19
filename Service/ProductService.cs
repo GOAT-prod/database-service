@@ -29,6 +29,8 @@ public class ProductService(IProductRepository productRepository, ILogger logger
         
         return products.OrderBy(i => i.Id).ToList();
     }
+    
+    public async Task<List<Product>> GetProductByFactoryId(int id) => await productRepository.GetProductByFactoryId(id);
 
     public async Task<bool> AddProduct(Product product)
     {

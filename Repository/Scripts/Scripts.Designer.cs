@@ -242,5 +242,11 @@ namespace Repository.Scripts {
                 return ResourceManager.GetString("GetProductItemByIds", resourceCulture);
             }
         }
+        
+        internal static string GetProductsByFactoryId {
+            get {
+                return ResourceManager.GetString("GetProductsByFactoryId", resourceCulture);
+            }
+        }
     }
 }
