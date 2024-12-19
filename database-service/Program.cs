@@ -3,35 +3,48 @@ using Core.Intefraces;
 using DataAccess;
 using DataAccess.Intefaces;
 using Migrations;
+using Newtonsoft.Json.Converters;
+using Repository;
+using Repository.Interfaces;
+using Service;
+using Service.Interfaces;
 
-const string CORS_POLICY = "CorsPolicy";
+const string corsPolicy = "CorsPolicy";
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson(options =>
+{
+    options.SerializerSettings.Converters.Add(new StringEnumConverter());
+});;
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddCors(options => options.AddPolicy(CORS_POLICY, builder =>
+builder.Services.AddCors(options => options.AddPolicy(corsPolicy, corsPolicyBuilder =>
 {
-    builder.WithOrigins("*")
+    corsPolicyBuilder.WithOrigins("*")
         .AllowAnyMethod()
-        .AllowAnyHeader()
-        .AllowCredentials();
+        .AllowAnyHeader();
 }));
 
 builder.Services.AddSingleton<ISettings, Settings>();
 builder.Services.AddSingleton<ILogger, CustomLogger>();
 builder.Services.AddSingleton<IPostgresContext, PostgresContext>();
 
+//  repos
+builder.Services.AddTransient<IUserRepository, UserRepository>();
+
+//  services
+builder.Services.AddTransient<IUserService, UserService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();
 app.UseSwaggerUI();
-app.UseCors(CORS_POLICY);
+app.UseCors(corsPolicy);
 
 app.UseHttpsRedirection();
 

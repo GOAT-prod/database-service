@@ -97,3 +97,11 @@
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/obj/Debug/net8.0/ref/database-service.dll
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Migrations.dll
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Migrations.pdb
+/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Repository.dll
+/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Service.dll
+/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Repository.pdb
+/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Service.pdb
+/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/obj/Debug/net8.0/database-service.sourcelink.json
+/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll

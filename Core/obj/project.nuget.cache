@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hwWQUEW86Ug=",
+  "dgSpecHash": "+VhqYba7iyA=",
   "success": true,
   "projectFilePath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "/Users/ilyaantonov/.nuget/packages/dbup-core/5.0.87/dbup-core.5.0.87.nupkg.sha512",
     "/Users/ilyaantonov/.nuget/packages/dbup-postgresql/5.0.40/dbup-postgresql.5.0.40.nupkg.sha512",
     "/Users/ilyaantonov/.nuget/packages/dbup-sqlserver/5.0.41/dbup-sqlserver.5.0.41.nupkg.sha512",
+    "/Users/ilyaantonov/.nuget/packages/microsoft.aspnetcore.jsonpatch/8.0.11/microsoft.aspnetcore.jsonpatch.8.0.11.nupkg.sha512",
+    "/Users/ilyaantonov/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/8.0.11/microsoft.aspnetcore.mvc.newtonsoftjson.8.0.11.nupkg.sha512",
     "/Users/ilyaantonov/.nuget/packages/microsoft.azure.services.appauthentication/1.6.2/microsoft.azure.services.appauthentication.1.6.2.nupkg.sha512",
     "/Users/ilyaantonov/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/ilyaantonov/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
@@ -43,6 +45,7 @@
     "/Users/ilyaantonov/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "/Users/ilyaantonov/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/Users/ilyaantonov/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/ilyaantonov/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/ilyaantonov/.nuget/packages/npgsql/9.0.2/npgsql.9.0.2.nupkg.sha512",
     "/Users/ilyaantonov/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.2/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "/Users/ilyaantonov/.nuget/packages/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.2/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

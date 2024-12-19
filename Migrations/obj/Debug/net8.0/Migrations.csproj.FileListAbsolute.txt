@@ -13,3 +13,4 @@
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Migrations/obj/Debug/net8.0/refint/Migrations.dll
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Migrations/obj/Debug/net8.0/Migrations.pdb
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Migrations/obj/Debug/net8.0/ref/Migrations.dll
+/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Migrations/obj/Debug/net8.0/Migrations.sourcelink.json

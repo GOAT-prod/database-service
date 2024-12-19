@@ -10,3 +10,4 @@
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/obj/Debug/net8.0/refint/Core.dll
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/obj/Debug/net8.0/Core.pdb
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/obj/Debug/net8.0/ref/Core.dll
+/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/obj/Debug/net8.0/Core.sourcelink.json
