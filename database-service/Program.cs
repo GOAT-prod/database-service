@@ -41,12 +41,14 @@ builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
 builder.Services.AddTransient<ICartRepository, CartRepository>();
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
+builder.Services.AddTransient<IReportRepository, ReportRepository>();
 
 //  services
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IProductService, ProductService>();
 builder.Services.AddTransient<ICartService, CartService>();
 builder.Services.AddTransient<IOrderService, OrderService>();
+builder.Services.AddTransient<IReportService, ReportService>();
 
 var app = builder.Build();
 
