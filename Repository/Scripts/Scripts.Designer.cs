@@ -224,5 +224,11 @@ namespace Repository.Scripts {
                 return ResourceManager.GetString("GetAllMaterials", resourceCulture);
             }
         }
+        
+        internal static string CreateCart {
+            get {
+                return ResourceManager.GetString("CreateCart", resourceCulture);
+            }
+        }
     }
 }

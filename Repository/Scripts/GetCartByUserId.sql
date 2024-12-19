@@ -1,4 +1,4 @@
-select id,
-       user_id
+select id      as Id,
+       user_id as UserId
 from cart
 where user_id = @id
