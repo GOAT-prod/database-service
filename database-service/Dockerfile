@@ -3,15 +3,7 @@
 # Установим рабочую директорию внутри контейнера
 WORKDIR /app
 EXPOSE 80
-COPY ./database-service.sln ./
-COPY ./Core ./Core
-COPY ./DataAccess ./DataAccess
-COPY ./Repository ./Repository
-COPY ./Service ./Service
-COPY ./Migrations ./Migrations
-COPY ./Controllers ./Controllers
-COPY ./Models ./Models
-COPY ./database-service ./database-service
+COPY . .
 WORKDIR /app
 
 RUN dotnet restore
