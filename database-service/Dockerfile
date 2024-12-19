@@ -4,7 +4,7 @@
 WORKDIR /app
 EXPOSE 80
 COPY . ./
-WORKDIR /app/database-service
+WORKDIR /app
 
 RUN dotnet restore
 RUN dotnet publish -c Release -o /app/out
