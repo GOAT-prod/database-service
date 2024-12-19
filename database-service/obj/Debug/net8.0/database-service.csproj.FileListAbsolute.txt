@@ -105,3 +105,4 @@
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Microsoft.AspNetCore.JsonPatch.dll
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
+/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll

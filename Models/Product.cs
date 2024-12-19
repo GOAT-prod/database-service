@@ -4,7 +4,7 @@ public class Product
 {
     public int Id { get; set; }
     public int FactoryId { get; set; }
-    public int FactoryName { get; set; }
+    public string FactoryName { get; set; }
     public string Name { get; set; } = string.Empty;
     public string Brand { get; set; } = string.Empty;
     public decimal Price { get; set; }

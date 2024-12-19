@@ -2,6 +2,7 @@ using Microsoft.Extensions.Logging;
 using Models;
 using Repository.Interfaces;
 using Service.Interfaces;
+using System.Threading.Tasks;
 
 namespace Service;
 
@@ -10,7 +11,7 @@ public class ProductService(IProductRepository productRepository, ILogger logger
     public async Task<List<Product>> GetProducts()
     {
         var products = await productRepository.GetProducts();
-        products.ForEach(async void (p) =>
+        var tasks = products.Select(async p =>
         {
             try
             {
@@ -22,13 +23,45 @@ public class ProductService(IProductRepository productRepository, ILogger logger
             {
                 logger.LogError(e.Message);
             }
-        });
+        }).ToList();
+
+        await Task.WhenAll(tasks);
         
         return products;
     }
 
     public async Task<bool> AddProduct(Product product)
     {
+        product.Id = await productRepository.AddProduct(product);
+        product.Items.ForEach(i => { i.ProductId = product.Id; });
+        product.Images.ForEach(i => { i.ProductId = product.Id; });
+
+        var addItemsTasks = product.Items.Select(productRepository.AddProductItem).ToList();
+        var addImagesTasks = product.Images.Select(productRepository.AddImage).ToList();
+        var addMaterialsTasks = product.Materials.Select(m => productRepository.AddMaterials(m, product.Id)).ToList();
+
+        await Task.WhenAll(addItemsTasks);
+        await Task.WhenAll(addImagesTasks);
+        await Task.WhenAll(addMaterialsTasks);
         
+        return true;
+    }
+
+    public async Task<bool> UpdateProduct(Product product)
+    {
+        _ = await productRepository.UpdateProduct(product);
+        
+        var updateProductItemsTasks = product.Items.Select(productRepository.UpdateProductItem).ToList();
+        var updateImagesTasks = product.Images.Select(productRepository.UpdateImage).ToList();
+        
+        await Task.WhenAll(updateProductItemsTasks);
+        await Task.WhenAll(updateImagesTasks);
+        
+        var ok = await productRepository.DeleteProductMaterials(product.Id);
+        
+        var addMaterialsTasks = product.Materials.Select(m => productRepository.AddMaterials(m, product.Id)).ToList();
+        await Task.WhenAll(addMaterialsTasks);
+        
+        return ok;
     }
 }

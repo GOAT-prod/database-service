@@ -1,7 +1,12 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
 namespace Models;
 
-public enum ProductStatus 
+[JsonConverter(typeof(StringEnumConverter))]
+public enum ProductStatus
 {
+    Unknown,
     Created,
     Deleted
 }

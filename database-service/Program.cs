@@ -20,7 +20,10 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 });;
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.EnableAnnotations();
+});
 
 builder.Services.AddCors(options => options.AddPolicy(corsPolicy, corsPolicyBuilder =>
 {
@@ -35,9 +38,11 @@ builder.Services.AddSingleton<IPostgresContext, PostgresContext>();
 
 //  repos
 builder.Services.AddTransient<IUserRepository, UserRepository>();
+builder.Services.AddTransient<IProductRepository, ProductRepository>();
 
 //  services
 builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IProductService, ProductService>();
 
 var app = builder.Build();
 

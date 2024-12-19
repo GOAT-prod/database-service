@@ -26,7 +26,7 @@ public class ProductRepository(IPostgresContext postgresContext) : IProductRepos
         name = product.Name,
         brand = product.Brand,
         price = product.Price,
-        status = product.Status,
+        status = product.Status.ToString(),
         factory_id = product.FactoryId,
     });
 
