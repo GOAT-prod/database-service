@@ -17,7 +17,7 @@ public class CartService(ICartRepository cartRepository) : ICartService
         }
         
         var cartItems = await cartRepository.GetCartItems(cart!.Id);
-        cart!.CartItems = cartItems;
+        cart.CartItems = cartItems.OrderBy(i => i.Id).ToList();
         
         return cart;
     }

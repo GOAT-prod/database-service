@@ -1,9 +1,9 @@
-select o.id,
-       o.type,
-       o.status,
-       o.create_date,
-       o.delivery_date,
-       u.username,
+select o.id            as Id,
+       o.type          as Type,
+       o.status        as Status,
+       o.create_date   as CreateDate,
+       o.delivery_date as DeliveryDate,
+       u.username      as Username,
        sum(pri.weight) as TotalWeight,
        sum(od.amount)  as TotalPrice
 from orders o

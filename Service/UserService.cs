@@ -17,7 +17,7 @@ public class UserService(IUserRepository userRepository) : IUserService
         { Factory, 3 }
     };
 
-    public async Task<List<User>> GetUsers() => await userRepository.GetUsers();
+    public async Task<List<User>> GetUsers() => (await userRepository.GetUsers()).OrderBy(u => u.Id).ToList();
 
     public async Task<bool> AddUser(User user)
     {

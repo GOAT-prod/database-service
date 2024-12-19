@@ -17,7 +17,7 @@ public class ProductService(IProductRepository productRepository, ILogger logger
             {
                 p.Images = await productRepository.GetImages(p.Id);
                 p.Materials = await productRepository.GetMaterials(p.Id);
-                p.Items = await productRepository.GetProductItems(p.Id);
+                p.Items = (await productRepository.GetProductItems(p.Id)).OrderBy(i => i.Id).ToList();
             }
             catch (Exception e)
             {
@@ -27,7 +27,7 @@ public class ProductService(IProductRepository productRepository, ILogger logger
 
         await Task.WhenAll(tasks);
         
-        return products;
+        return products.OrderBy(i => i.Id).ToList();
     }
 
     public async Task<bool> AddProduct(Product product)

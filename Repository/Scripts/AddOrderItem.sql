@@ -1,2 +1,2 @@
-insert into orders_item (order_id, product_item_id, quantity)
-values (@order_id, @product_item_id, @quantity);
+insert into orders_item (id, order_id, product_item_id, quantity)
+values (@id, @order_id, @product_item_id, @quantity);

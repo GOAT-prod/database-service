@@ -1,2 +1,2 @@
-insert into operation (date, order_id, description)
-values (@date, @order_id, @description);
+insert into operation (id, date, order_id, description)
+values (@id, @date, @order_id, @description);

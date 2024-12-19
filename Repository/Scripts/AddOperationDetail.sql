@@ -1,2 +1,2 @@
-insert into operation_detail (operation_id, type, amount)
-values (@operation_id, @type, @amount);
+insert into operation_detail (id, operation_id, type, amount)
+values (@id, @operation_id, @type, @amount);
