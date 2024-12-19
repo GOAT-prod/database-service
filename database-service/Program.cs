@@ -46,8 +46,6 @@ app.UseSwagger();
 app.UseSwaggerUI();
 app.UseCors(corsPolicy);
 
-app.UseHttpsRedirection();
-
 app.MapControllers();
 
 new Migrator(app.Services.GetRequiredService<ISettings>(), app.Services.GetRequiredService<ILogger>()).Migrate();
