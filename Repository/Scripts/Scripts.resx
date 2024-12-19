@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <data name="AddCartItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>AddCartItem.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="AddClient" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>AddClient.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="AddImages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>AddImages.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="AddOperation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>AddOperation.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="AddOperationDetail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>AddOperationDetail.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="AddOrder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>AddOrder.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="AddOrderItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>AddOrderItem.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="AddProduct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>AddProduct.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="AddProductItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>AddProductItem.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="AddProductMaterials" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>AddProductMaterials.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="AddUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>AddUser.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="DeleteCartItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>DeleteCartItem.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="DeleteProductMaterials" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>DeleteProductMaterials.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="GenerateReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>GenerateReport.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="GetAllOrders" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>GetAllOrders.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="GetCartByUserId" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>GetCartByUserId.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="GetCartItemByCartId" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>GetCartItemByCartId.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="GetImagesByProductId" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>GetImagesByProductId.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="GetOrdersByUserId" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>GetOrdersByUserId.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="GetProductItemsByProductId" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>GetProductItemsByProductId.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="GetProductMaterials" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>GetProductMaterials.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="GetProducts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>GetProducts.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="GetUsers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>GetUsers.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="UpdateCartItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>UpdateCartItem.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="UpdateImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>UpdateImage.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="UpdateOrder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>UpdateOrder.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="UpdateProduct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>UpdateProduct.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="UpdateProductItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>UpdateProductItem.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="UpdateUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>UpdateUser.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+</root>
