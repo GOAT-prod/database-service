@@ -230,5 +230,17 @@ namespace Repository.Scripts {
                 return ResourceManager.GetString("CreateCart", resourceCulture);
             }
         }
+        
+        internal static string GetUserById {
+            get {
+                return ResourceManager.GetString("GetUserById", resourceCulture);
+            }
+        }
+        
+        internal static string GetProductItemByIds {
+            get {
+                return ResourceManager.GetString("GetProductItemByIds", resourceCulture);
+            }
+        }
     }
 }

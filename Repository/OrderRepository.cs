@@ -1,9 +1,10 @@
 using DataAccess.Intefaces;
 using Models;
+using Repository.Interfaces;
 
 namespace Repository;
 
-public class OrderRepository(IPostgresContext postgresContext)
+public class OrderRepository(IPostgresContext postgresContext) : IOrderRepository
 {
     public async Task<List<Order>> GetAllOrders() => await postgresContext.Select<Order>(Scripts.Scripts.GetAllOrders);
 
@@ -15,8 +16,9 @@ public class OrderRepository(IPostgresContext postgresContext)
         {
             id = order.Id,
             user_id = userId,
-            create_date = DateTime.UtcNow,
-            status = order.Status,
+            create_date = order.CreateDate,
+            delivery_date = order.DeliveryDate,
+            status = order.Status.ToString(),
             type = order.Type,
         });
 
@@ -46,4 +48,10 @@ public class OrderRepository(IPostgresContext postgresContext)
             type = "delivery",
             amount
         });
+    
+    public async Task<bool> UpdateOrder(Guid id, OrderStatus status) => await postgresContext.Exec(Scripts.Scripts.UpdateOrder, new
+    {
+        status,
+        id
+    });
 }

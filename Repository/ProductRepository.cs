@@ -12,6 +12,9 @@ public class ProductRepository(IPostgresContext postgresContext) : IProductRepos
     public async Task<List<ProductItem>> GetProductItems(int id) =>
         await postgresContext.Select<ProductItem>(Scripts.Scripts.GetProductItemsByProductId, new { id });
 
+    public async Task<List<ProductItem>> GetProductItemsByIds(IEnumerable<int> ids) =>
+        await postgresContext.Select<ProductItem>(Scripts.Scripts.GetProductItemByIds, new { ids = ids.ToList() });
+
     public async Task<List<Material>> GetMaterials(int id) =>
         await postgresContext.Select<Material>(Scripts.Scripts.GetProductMaterials, new { id });
 
@@ -76,6 +79,7 @@ public class ProductRepository(IPostgresContext postgresContext) : IProductRepos
         url = image.Url,
         id = image.Id
     });
-    
-    public async Task<bool> DeleteProductMaterials(int id) => await postgresContext.Exec(Scripts.Scripts.DeleteProductMaterials, new { id });
+
+    public async Task<bool> DeleteProductMaterials(int id) =>
+        await postgresContext.Exec(Scripts.Scripts.DeleteProductMaterials, new { id });
 }

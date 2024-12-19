@@ -17,4 +17,5 @@ public interface IProductRepository
     Task<bool> UpdateProductItem(ProductItem productItem);
     Task<bool> UpdateImage(Image image);
     Task<bool> DeleteProductMaterials(int id);
+    Task<List<ProductItem>> GetProductItemsByIds(IEnumerable<int> ids);
 }

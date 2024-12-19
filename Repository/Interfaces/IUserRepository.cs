@@ -8,4 +8,5 @@ public interface IUserRepository
     Task<bool> AddUser(User user, int roleId);
     Task<bool> UpdateUser(int id, string status);
     Task<int> AddClient(User user);
+    Task<User> GetUserById(int id);
 }

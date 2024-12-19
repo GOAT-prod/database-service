@@ -28,4 +28,6 @@ public class UserRepository(IPostgresContext postgresContext) : IUserRepository
         address = user.Address,
         inn = user.INN
     });
+
+    public async Task<User> GetUserById(int id) => await postgresContext.Get<User>(Scripts.Scripts.GetUserById, new { id }) ?? new User();
 }
