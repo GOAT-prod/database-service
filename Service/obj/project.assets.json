@@ -9206,11 +9206,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Service/Service.csproj",
+      "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj",
       "projectName": "Service",
-      "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Service/Service.csproj",
+      "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj",
       "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-      "outputPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Service/obj/",
+      "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
@@ -9225,11 +9225,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj": {
-              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj"
+            "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj": {
+              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj"
             },
-            "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Repository/Repository.csproj": {
-              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Repository/Repository.csproj"
+            "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj": {
+              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj"
             }
           }
         }

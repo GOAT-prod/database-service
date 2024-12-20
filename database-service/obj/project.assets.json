@@ -9605,11 +9605,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/database-service.csproj",
+      "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/database-service/database-service.csproj",
       "projectName": "database-service",
-      "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/database-service.csproj",
+      "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/database-service/database-service.csproj",
       "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-      "outputPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/database-service/obj/",
+      "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/database-service/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
@@ -9624,23 +9624,23 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj": {
-              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj"
+            "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj": {
+              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj"
             },
-            "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/DataAccess/DataAccess.csproj": {
-              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/DataAccess/DataAccess.csproj"
+            "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj": {
+              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj"
             },
-            "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Migrations/Migrations.csproj": {
-              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Migrations/Migrations.csproj"
+            "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/Migrations.csproj": {
+              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/Migrations.csproj"
             },
-            "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj": {
-              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj"
+            "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj": {
+              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj"
             },
-            "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Repository/Repository.csproj": {
-              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Repository/Repository.csproj"
+            "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj": {
+              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj"
             },
-            "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Service/Service.csproj": {
-              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Service/Service.csproj"
+            "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj": {
+              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj"
             }
           }
         }

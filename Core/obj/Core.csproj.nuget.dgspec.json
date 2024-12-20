@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj": {}
+    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj": {}
   },
   "projects": {
-    "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj": {
+    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj",
+        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj",
+        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj",
         "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/obj/",
+        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"

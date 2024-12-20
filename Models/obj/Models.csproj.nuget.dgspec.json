@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj": {}
+    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj": {}
   },
   "projects": {
-    "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj": {
+    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj",
+        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj",
         "projectName": "Models",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj",
+        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj",
         "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/obj/",
+        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"

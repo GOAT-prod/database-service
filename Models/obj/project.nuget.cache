@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8MsWeodAKhg=",
+  "dgSpecHash": "laIfm2IYgx8=",
   "success": true,
-  "projectFilePath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj",
+  "projectFilePath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj",
   "expectedPackageFiles": [
     "/Users/ilyaantonov/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/ilyaantonov/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

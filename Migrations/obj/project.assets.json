@@ -9079,11 +9079,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Migrations/Migrations.csproj",
+      "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/Migrations.csproj",
       "projectName": "Migrations",
-      "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Migrations/Migrations.csproj",
+      "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/Migrations.csproj",
       "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-      "outputPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Migrations/obj/",
+      "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
@@ -9098,8 +9098,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj": {
-              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj"
+            "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj": {
+              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj"
             }
           }
         }

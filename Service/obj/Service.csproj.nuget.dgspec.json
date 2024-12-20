@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Service/Service.csproj": {}
+    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj": {}
   },
   "projects": {
-    "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj": {
+    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj",
+        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj",
+        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj",
         "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/obj/",
+        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
@@ -108,14 +108,14 @@
         }
       }
     },
-    "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/DataAccess/DataAccess.csproj": {
+    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/DataAccess/DataAccess.csproj",
+        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/DataAccess/DataAccess.csproj",
+        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj",
         "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/DataAccess/obj/",
+        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
@@ -130,8 +130,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj": {
-                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Core/Core.csproj"
+              "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj": {
+                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj"
               }
             }
           }
@@ -224,14 +224,14 @@
         }
       }
     },
-    "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj": {
+    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj",
+        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj",
         "projectName": "Models",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj",
+        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj",
         "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/obj/",
+        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
@@ -328,14 +328,14 @@
         }
       }
     },
-    "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Repository/Repository.csproj": {
+    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Repository/Repository.csproj",
+        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Repository/Repository.csproj",
+        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj",
         "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Repository/obj/",
+        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
@@ -350,11 +350,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/DataAccess/DataAccess.csproj": {
-                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/DataAccess/DataAccess.csproj"
+              "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj": {
+                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj"
               },
-              "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj": {
-                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj"
+              "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj": {
+                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj"
               }
             }
           }
@@ -415,14 +415,14 @@
         }
       }
     },
-    "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Service/Service.csproj": {
+    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Service/Service.csproj",
+        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj",
         "projectName": "Service",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Service/Service.csproj",
+        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj",
         "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Service/obj/",
+        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
@@ -437,11 +437,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj": {
-                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Models/Models.csproj"
+              "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj": {
+                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj"
               },
-              "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Repository/Repository.csproj": {
-                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/database-service/database-service/Repository/Repository.csproj"
+              "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj": {
+                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj"
               }
             }
           }
