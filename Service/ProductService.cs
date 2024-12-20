@@ -78,6 +78,9 @@ public class ProductService(IProductRepository productRepository, ILogger logger
         
         var imagesForAdd = product.Images.Where(i => i.Id == 0).ToList();
         var imagesForUpdate = product.Images.Where(i => i.Id != 0).ToList();
+        
+        itemsForAdd.ForEach(i => { i.ProductId = product.Id; });
+        imagesForAdd.ForEach(i => { i.ProductId = product.Id; });
 
         var updateProductItemsTasks = itemsForUpdate.Select(productRepository.UpdateProductItem).ToList();
         var addProductItemsTasks = itemsForAdd.Select(productRepository.UpdateProductItem).ToList();
