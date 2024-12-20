@@ -22,8 +22,22 @@ public class CartService(ICartRepository cartRepository) : ICartService
         return cart;
     }
     
-    public async Task<bool> AddCartItem(CartItem cartItem) => await cartRepository.AddCartItem(cartItem);
-    
+    public async Task<bool> AddCartItem(CartItem cartItem)
+    {
+        var cart = await cartRepository.GetCart(cartItem.CartId);
+        var cartItems = await cartRepository.GetCartItems(cart!.Id);
+
+        if (!cartItems.Exists(i => i.ProductItemId == cartItem.ProductItemId))
+        {
+            return await cartRepository.AddCartItem(cartItem);
+        }
+        
+        var updatedCartItem = cartItems.FirstOrDefault(i => i.ProductItemId == cartItem.ProductItemId);
+        updatedCartItem!.SelectCount += cartItem.SelectCount;
+            
+        return await cartRepository.UpdateCartItem(updatedCartItem);
+    }
+
     public async Task<bool> UpdateCartItem(CartItem cartItem) => await cartRepository.UpdateCartItem(cartItem);
     
     public async Task<bool> DeleteCartItem(int id) => await cartRepository.DeleteCartItems([id]);
