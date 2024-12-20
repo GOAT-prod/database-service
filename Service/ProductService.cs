@@ -72,10 +72,15 @@ public class ProductService(IProductRepository productRepository, ILogger logger
     public async Task<bool> UpdateProduct(Product product)
     {
         _ = await productRepository.UpdateProduct(product);
+        
+        var itemsForAdd = product.Items.Where(i => i.Id == 0).ToList();
+        var itemsForUpdate = product.Items.Where(i => i.Id != 0).ToList();
 
-        var updateProductItemsTasks = product.Items.Select(productRepository.UpdateProductItem).ToList();
+        var updateProductItemsTasks = itemsForUpdate.Select(productRepository.UpdateProductItem).ToList();
+        var addProductItemsTasks = itemsForAdd.Select(productRepository.UpdateProductItem).ToList();
         var updateImagesTasks = product.Images.Select(productRepository.UpdateImage).ToList();
 
+        await Task.WhenAll(addProductItemsTasks);
         await Task.WhenAll(updateProductItemsTasks);
         await Task.WhenAll(updateImagesTasks);
 
