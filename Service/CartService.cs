@@ -24,8 +24,7 @@ public class CartService(ICartRepository cartRepository) : ICartService
     
     public async Task<bool> AddCartItem(CartItem cartItem)
     {
-        var cart = await cartRepository.GetCart(cartItem.CartId);
-        var cartItems = await cartRepository.GetCartItems(cart!.Id);
+        var cartItems = await cartRepository.GetCartItems(cartItem.CartId);
 
         if (!cartItems.Exists(i => i.ProductItemId == cartItem.ProductItemId))
         {
