@@ -83,10 +83,10 @@ public class ProductService(IProductRepository productRepository, ILogger logger
         imagesForAdd.ForEach(i => { i.ProductId = product.Id; });
 
         var updateProductItemsTasks = itemsForUpdate.Select(productRepository.UpdateProductItem).ToList();
-        var addProductItemsTasks = itemsForAdd.Select(productRepository.UpdateProductItem).ToList();
+        var addProductItemsTasks = itemsForAdd.Select(productRepository.AddProductItem).ToList();
         
         var updateImagesTasks = imagesForUpdate.Select(productRepository.UpdateImage).ToList();
-        var addImagesTasks = imagesForAdd.Select(productRepository.UpdateImage).ToList();
+        var addImagesTasks = imagesForAdd.Select(productRepository.AddImage).ToList();
 
         await Task.WhenAll(addProductItemsTasks);
         await Task.WhenAll(updateProductItemsTasks);
