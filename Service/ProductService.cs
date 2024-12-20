@@ -75,13 +75,20 @@ public class ProductService(IProductRepository productRepository, ILogger logger
         
         var itemsForAdd = product.Items.Where(i => i.Id == 0).ToList();
         var itemsForUpdate = product.Items.Where(i => i.Id != 0).ToList();
+        
+        var imagesForAdd = product.Images.Where(i => i.Id == 0).ToList();
+        var imagesForUpdate = product.Images.Where(i => i.Id != 0).ToList();
 
         var updateProductItemsTasks = itemsForUpdate.Select(productRepository.UpdateProductItem).ToList();
         var addProductItemsTasks = itemsForAdd.Select(productRepository.UpdateProductItem).ToList();
-        var updateImagesTasks = product.Images.Select(productRepository.UpdateImage).ToList();
+        
+        var updateImagesTasks = imagesForUpdate.Select(productRepository.UpdateImage).ToList();
+        var addImagesTasks = imagesForAdd.Select(productRepository.UpdateImage).ToList();
 
         await Task.WhenAll(addProductItemsTasks);
         await Task.WhenAll(updateProductItemsTasks);
+        
+        await Task.WhenAll(addImagesTasks);
         await Task.WhenAll(updateImagesTasks);
 
         var ok = await productRepository.DeleteProductMaterials(product.Id);
