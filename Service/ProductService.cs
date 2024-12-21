@@ -101,4 +101,6 @@ public class ProductService(IProductRepository productRepository, ILogger logger
 
         return ok;
     }
+
+    public Task<List<Material>> GetAllMaterials() => productRepository.GetAllMaterials();
 }

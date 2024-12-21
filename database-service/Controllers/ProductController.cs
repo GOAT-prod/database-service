@@ -24,4 +24,7 @@ public class ProductController(IProductService productService) : ControllerBase
     /// <returns></returns>
     [HttpPut("/product")]
     public async Task<bool> UpdateProduct([FromBody] Product product) => await productService.UpdateProduct(product);
+    
+    [HttpGet("/materials")]
+    public async Task<List<Material>> GetAllMaterials() => await productService.GetAllMaterials();
 }
