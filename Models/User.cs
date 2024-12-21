@@ -12,3 +12,17 @@ public class User
     public string INN { get; set; } = string.Empty;
     public UserStatus Status { get; set; }
 }
+
+public class UserGroups
+{
+    public string Role { get; set; } = string.Empty;
+    public int Count { get; set; }
+    public List<User> Users { get; set; } = [];
+}
+
+public class DbUserGroups
+{
+    public string Role { get; set; } = string.Empty;
+    public int Count { get; set; }
+    public string Users { get; set; } = string.Empty;
+}

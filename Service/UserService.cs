@@ -26,4 +26,6 @@ public class UserService(IUserRepository userRepository) : IUserService
     }
     
     public async Task<bool> UpdateUser(int id, string status) => await userRepository.UpdateUser(id, status);
+    
+    public async Task<List<UserGroups>> GetUserGroups() => await userRepository.GetUserGroups();
 }

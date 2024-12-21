@@ -1,5 +1,6 @@
 using DataAccess.Intefaces;
 using Models;
+using Newtonsoft.Json;
 using Repository.Interfaces;
 
 namespace Repository;
@@ -17,10 +18,11 @@ public class UserRepository(IPostgresContext postgresContext) : IUserRepository
         client_id = user.ClientId,
     });
 
-    public async Task<bool> UpdateUser(int id, string status) => await postgresContext.Exec(Scripts.Scripts.UpdateUser, new
-    { 
-        status, id
-    });
+    public async Task<bool> UpdateUser(int id, string status) => await postgresContext.Exec(Scripts.Scripts.UpdateUser,
+        new
+        {
+            status, id
+        });
 
     public async Task<int> AddClient(User user) => await postgresContext.Get<int>(Scripts.Scripts.AddClient, new
     {
@@ -29,5 +31,14 @@ public class UserRepository(IPostgresContext postgresContext) : IUserRepository
         inn = user.INN
     });
 
-    public async Task<User> GetUserById(int id) => await postgresContext.Get<User>(Scripts.Scripts.GetUserById, new { id }) ?? new User();
+    public async Task<User> GetUserById(int id) =>
+        await postgresContext.Get<User>(Scripts.Scripts.GetUserById, new { id }) ?? new User();
+
+    public async Task<List<UserGroups>> GetUserGroups() =>
+        (await postgresContext.Select<DbUserGroups>(Scripts.Scripts.GetUsersGroups)).Select(g => new UserGroups
+        {
+            Role = g.Role,
+            Count = g.Count,
+            Users = JsonConvert.DeserializeObject<List<User>>(g.Users) ?? []
+        }).ToList();
 }
