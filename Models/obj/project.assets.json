@@ -9050,19 +9050,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/ilyaantonov/.nuget/packages/": {}
+    "C:\\Users\\duckness\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj",
+      "projectUniqueName": "D:\\Универ\\database-service\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj",
-      "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-      "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/obj/",
+      "projectPath": "D:\\Универ\\database-service\\Models\\Models.csproj",
+      "packagesPath": "C:\\Users\\duckness\\.nuget\\packages\\",
+      "outputPath": "D:\\Универ\\database-service\\Models\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\duckness\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -9152,7 +9153,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

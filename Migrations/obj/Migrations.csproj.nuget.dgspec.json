@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/Migrations.csproj": {}
+    "D:\\Универ\\database-service\\Migrations\\Migrations.csproj": {}
   },
   "projects": {
-    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj": {
+    "D:\\Универ\\database-service\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj",
+        "projectUniqueName": "D:\\Универ\\database-service\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj",
-        "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/obj/",
+        "projectPath": "D:\\Универ\\database-service\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\duckness\\.nuget\\packages\\",
+        "outputPath": "D:\\Универ\\database-service\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\duckness\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -104,21 +105,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/Migrations.csproj": {
+    "D:\\Универ\\database-service\\Migrations\\Migrations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/Migrations.csproj",
+        "projectUniqueName": "D:\\Универ\\database-service\\Migrations\\Migrations.csproj",
         "projectName": "Migrations",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/Migrations.csproj",
-        "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/obj/",
+        "projectPath": "D:\\Универ\\database-service\\Migrations\\Migrations.csproj",
+        "packagesPath": "C:\\Users\\duckness\\.nuget\\packages\\",
+        "outputPath": "D:\\Универ\\database-service\\Migrations\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\duckness\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -130,8 +132,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj": {
-                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj"
+              "D:\\Универ\\database-service\\Core\\Core.csproj": {
+                "projectPath": "D:\\Универ\\database-service\\Core\\Core.csproj"
               }
             }
           }
@@ -192,7 +194,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

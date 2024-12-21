@@ -9125,19 +9125,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/ilyaantonov/.nuget/packages/": {}
+    "C:\\Users\\duckness\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj",
+      "projectUniqueName": "D:\\Универ\\database-service\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj",
-      "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-      "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/obj/",
+      "projectPath": "D:\\Универ\\database-service\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\duckness\\.nuget\\packages\\",
+      "outputPath": "D:\\Универ\\database-service\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\duckness\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -9149,8 +9150,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj": {
-              "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj"
+            "D:\\Универ\\database-service\\Core\\Core.csproj": {
+              "projectPath": "D:\\Универ\\database-service\\Core\\Core.csproj"
             }
           }
         }
@@ -9239,7 +9240,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

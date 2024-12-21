@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj": {}
+    "D:\\Универ\\database-service\\Service\\Service.csproj": {}
   },
   "projects": {
-    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj": {
+    "D:\\Универ\\database-service\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj",
+        "projectUniqueName": "D:\\Универ\\database-service\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj",
-        "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/obj/",
+        "projectPath": "D:\\Универ\\database-service\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\duckness\\.nuget\\packages\\",
+        "outputPath": "D:\\Универ\\database-service\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\duckness\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -104,21 +105,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj": {
+    "D:\\Универ\\database-service\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj",
+        "projectUniqueName": "D:\\Универ\\database-service\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj",
-        "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/obj/",
+        "projectPath": "D:\\Универ\\database-service\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\duckness\\.nuget\\packages\\",
+        "outputPath": "D:\\Универ\\database-service\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\duckness\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -130,8 +132,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj": {
-                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Core/Core.csproj"
+              "D:\\Универ\\database-service\\Core\\Core.csproj": {
+                "projectPath": "D:\\Универ\\database-service\\Core\\Core.csproj"
               }
             }
           }
@@ -220,21 +222,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj": {
+    "D:\\Универ\\database-service\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj",
+        "projectUniqueName": "D:\\Универ\\database-service\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj",
-        "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/obj/",
+        "projectPath": "D:\\Универ\\database-service\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\duckness\\.nuget\\packages\\",
+        "outputPath": "D:\\Универ\\database-service\\Models\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\duckness\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -324,21 +327,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj": {
+    "D:\\Универ\\database-service\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj",
+        "projectUniqueName": "D:\\Универ\\database-service\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj",
-        "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/obj/",
+        "projectPath": "D:\\Универ\\database-service\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\duckness\\.nuget\\packages\\",
+        "outputPath": "D:\\Универ\\database-service\\Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\duckness\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -350,11 +354,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj": {
-                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/DataAccess.csproj"
+              "D:\\Универ\\database-service\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\Универ\\database-service\\DataAccess\\DataAccess.csproj"
               },
-              "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj": {
-                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj"
+              "D:\\Универ\\database-service\\Models\\Models.csproj": {
+                "projectPath": "D:\\Универ\\database-service\\Models\\Models.csproj"
               }
             }
           }
@@ -411,21 +415,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj": {
+    "D:\\Универ\\database-service\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj",
+        "projectUniqueName": "D:\\Универ\\database-service\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/Service.csproj",
-        "packagesPath": "/Users/ilyaantonov/.nuget/packages/",
-        "outputPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Service/obj/",
+        "projectPath": "D:\\Универ\\database-service\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\duckness\\.nuget\\packages\\",
+        "outputPath": "D:\\Универ\\database-service\\Service\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "/Users/ilyaantonov/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\duckness\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -437,11 +442,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj": {
-                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Models/Models.csproj"
+              "D:\\Универ\\database-service\\Models\\Models.csproj": {
+                "projectPath": "D:\\Универ\\database-service\\Models\\Models.csproj"
               },
-              "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj": {
-                "projectPath": "/Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Repository/Repository.csproj"
+              "D:\\Универ\\database-service\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\Универ\\database-service\\Repository\\Repository.csproj"
               }
             }
           }
@@ -498,7 +503,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

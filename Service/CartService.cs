@@ -18,6 +18,7 @@ public class CartService(ICartRepository cartRepository) : ICartService
         
         var cartItems = await cartRepository.GetCartItems(cart!.Id);
         cart.CartItems = cartItems.OrderBy(i => i.Id).ToList();
+        cart.TotalSelectedPrice = cartItems.Where(i => i.IsSelected).Select(i => i.Price * i.SelectCount).Sum();
         
         return cart;
     }
