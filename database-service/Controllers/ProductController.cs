@@ -9,7 +9,7 @@ namespace database_service.Controllers;
 public class ProductController(IProductService productService) : ControllerBase
 {
     [HttpGet("/products")]
-    public async Task<List<Product>> GetProducts() => await productService.GetProducts();
+    public async Task<List<Product>> GetProducts([FromQuery] bool byTopSell) => await productService.GetProducts(byTopSell);
     
     [HttpGet("/products/{id}")]
     public async Task<List<Product>> GetProductByFactoryId(int id) => await productService.GetProductByFactoryId(id);

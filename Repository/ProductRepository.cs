@@ -9,6 +9,9 @@ public class ProductRepository(IPostgresContext postgresContext) : IProductRepos
     public async Task<List<Product>> GetProducts() =>
         await postgresContext.Select<Product>(Scripts.Scripts.GetProducts);
 
+    public async Task<List<Product>> GetProductByTopSell() => 
+        await postgresContext.Select<Product>(Scripts.Scripts.GetProductsByTopSell);
+
     public async Task<List<Product>> GetProductByFactoryId(int id) =>
         await postgresContext.Select<Product>(Scripts.Scripts.GetProductsByFactoryId, new { id });
 

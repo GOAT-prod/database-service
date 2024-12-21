@@ -5,6 +5,7 @@ namespace Repository.Interfaces;
 public interface IProductRepository
 {
     Task<List<Product>> GetProducts();
+    Task<List<Product>> GetProductByTopSell();
     Task<List<Product>> GetProductByFactoryId(int id);
     Task<List<ProductItem>> GetProductItems(int id);
     Task<List<Material>> GetMaterials(int id);

@@ -30,3 +30,19 @@
 /Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/obj/Debug/net8.0/refint/DataAccess.dll
 /Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/obj/Debug/net8.0/DataAccess.pdb
 /Users/ilyaantonov/Downloads/4 курс/microservices/database-service/DataAccess/obj/Debug/net8.0/ref/DataAccess.dll
+D:\Универ\database-service\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\Универ\database-service\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\Универ\database-service\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\Универ\database-service\DataAccess\bin\Debug\net8.0\Core.dll
+D:\Универ\database-service\DataAccess\bin\Debug\net8.0\Core.pdb
+D:\Универ\database-service\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\Универ\database-service\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\database-service\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\Универ\database-service\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\Универ\database-service\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Универ\database-service\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+D:\Универ\database-service\DataAccess\obj\Debug\net8.0\DataAccess.csproj.Up2Date
+D:\Универ\database-service\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\Универ\database-service\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\Универ\database-service\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\Универ\database-service\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

@@ -10,4 +10,5 @@ public class Order
     public string Username { get; set; } = string.Empty;
     public decimal TotalWeight { get; set; }
     public decimal TotalPrice { get; set; }
+    public decimal AveragePrice { get; set; }
 }

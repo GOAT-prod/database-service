@@ -7,4 +7,5 @@ select p.id     as Id,
        p.status as Status
 from product p
          join client c on c.id = p.factory_id
-where c.id = @id;
+where c.id = @id
+order by p.id;

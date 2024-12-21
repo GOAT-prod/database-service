@@ -30,3 +30,19 @@
 /Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/obj/Debug/net8.0/refint/Migrations.dll
 /Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/obj/Debug/net8.0/Migrations.pdb
 /Users/ilyaantonov/Downloads/4 курс/microservices/database-service/Migrations/obj/Debug/net8.0/ref/Migrations.dll
+D:\Универ\database-service\Migrations\bin\Debug\net8.0\Migrations.deps.json
+D:\Универ\database-service\Migrations\bin\Debug\net8.0\Migrations.dll
+D:\Универ\database-service\Migrations\bin\Debug\net8.0\Migrations.pdb
+D:\Универ\database-service\Migrations\bin\Debug\net8.0\Core.dll
+D:\Универ\database-service\Migrations\bin\Debug\net8.0\Core.pdb
+D:\Универ\database-service\Migrations\obj\Debug\net8.0\Migrations.csproj.AssemblyReference.cache
+D:\Универ\database-service\Migrations\obj\Debug\net8.0\Migrations.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\database-service\Migrations\obj\Debug\net8.0\Migrations.AssemblyInfoInputs.cache
+D:\Универ\database-service\Migrations\obj\Debug\net8.0\Migrations.AssemblyInfo.cs
+D:\Универ\database-service\Migrations\obj\Debug\net8.0\Migrations.csproj.CoreCompileInputs.cache
+D:\Универ\database-service\Migrations\obj\Debug\net8.0\Migrations.sourcelink.json
+D:\Универ\database-service\Migrations\obj\Debug\net8.0\Migrations.csproj.Up2Date
+D:\Универ\database-service\Migrations\obj\Debug\net8.0\Migrations.dll
+D:\Универ\database-service\Migrations\obj\Debug\net8.0\refint\Migrations.dll
+D:\Универ\database-service\Migrations\obj\Debug\net8.0\Migrations.pdb
+D:\Универ\database-service\Migrations\obj\Debug\net8.0\ref\Migrations.dll

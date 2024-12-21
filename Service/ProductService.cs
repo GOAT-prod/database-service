@@ -8,9 +8,12 @@ namespace Service;
 
 public class ProductService(IProductRepository productRepository, ILogger logger) : IProductService
 {
-    public async Task<List<Product>> GetProducts()
+    public async Task<List<Product>> GetProducts(bool byTopSell = false)
     {
-        var products = await productRepository.GetProducts();
+        var products = byTopSell
+            ? await productRepository.GetProductByTopSell()
+            : await productRepository.GetProducts();
+        
         var tasks = products.Select(async p =>
         {
             try
@@ -27,7 +30,7 @@ public class ProductService(IProductRepository productRepository, ILogger logger
 
         await Task.WhenAll(tasks);
 
-        return products.OrderBy(i => i.Id).ToList();
+        return products;
     }
 
     public async Task<List<Product>> GetProductByFactoryId(int id)
@@ -72,25 +75,25 @@ public class ProductService(IProductRepository productRepository, ILogger logger
     public async Task<bool> UpdateProduct(Product product)
     {
         _ = await productRepository.UpdateProduct(product);
-        
+
         var itemsForAdd = product.Items.Where(i => i.Id == 0).ToList();
         var itemsForUpdate = product.Items.Where(i => i.Id != 0).ToList();
-        
+
         var imagesForAdd = product.Images.Where(i => i.Id == 0).ToList();
         var imagesForUpdate = product.Images.Where(i => i.Id != 0).ToList();
-        
+
         itemsForAdd.ForEach(i => { i.ProductId = product.Id; });
         imagesForAdd.ForEach(i => { i.ProductId = product.Id; });
 
         var updateProductItemsTasks = itemsForUpdate.Select(productRepository.UpdateProductItem).ToList();
         var addProductItemsTasks = itemsForAdd.Select(productRepository.AddProductItem).ToList();
-        
+
         var updateImagesTasks = imagesForUpdate.Select(productRepository.UpdateImage).ToList();
         var addImagesTasks = imagesForAdd.Select(productRepository.AddImage).ToList();
 
         await Task.WhenAll(addProductItemsTasks);
         await Task.WhenAll(updateProductItemsTasks);
-        
+
         await Task.WhenAll(addImagesTasks);
         await Task.WhenAll(updateImagesTasks);
 
