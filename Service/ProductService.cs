@@ -2,11 +2,10 @@ using Microsoft.Extensions.Logging;
 using Models;
 using Repository.Interfaces;
 using Service.Interfaces;
-using System.Threading.Tasks;
 
 namespace Service;
 
-public class ProductService(IProductRepository productRepository, ILogger logger) : IProductService
+public class ProductService(IProductRepository productRepository, IOrderService orderService, ILogger logger) : IProductService
 {
     public async Task<List<Product>> GetProducts(bool byTopSell = false)
     {
@@ -52,7 +51,7 @@ public class ProductService(IProductRepository productRepository, ILogger logger
 
         await Task.WhenAll(tasks);
 
-        return products.OrderBy(i => i.Id).ToList();
+        return products;
     }
 
     public async Task<bool> AddProduct(Product product)

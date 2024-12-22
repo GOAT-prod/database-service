@@ -47,5 +47,35 @@ public class OrderService(IOrderRepository orderRepository, ICartRepository cart
         return true;
     }
 
+    public async Task<bool> AddSupply(Product product)
+    {
+        var user = await userRepository.GetUserByClientId(product.FactoryId);
+        if (user == null)
+        {
+            return false;
+        }
+        
+        var products = await productRepository.GetProductByFactoryId(product.FactoryId);
+        product = products.LastOrDefault()!;
+        
+        var order = new Order
+        {
+            Id = Guid.NewGuid(),
+            Type = OrderType.Supply,
+            Status = OrderStatus.Pending,
+            CreateDate = DateTime.Now,
+            DeliveryDate = default,
+            Username = user.Username
+        };
+        
+        _ = await orderRepository.AddOrder(order, (int)user.Id!);
+        foreach (var orderingCartItem in product.Items)
+        {
+            _ = await orderRepository.AddOrderItem(Guid.NewGuid(), order.Id, orderingCartItem.Id, orderingCartItem.Count);
+        }
+        
+        return true;
+    }
+
     public async Task<bool> UpdateOrder(Guid orderId, OrderStatus status) => await orderRepository.UpdateOrder(orderId, status);
 }

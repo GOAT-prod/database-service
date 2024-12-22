@@ -306,19 +306,15 @@ namespace Repository.Scripts {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to select o.id            as Id,
-        ///       o.type          as Type,
-        ///       o.status        as Status,
-        ///       o.create_date   as CreateDate,
-        ///       o.delivery_date as DeliveryDate,
-        ///       u.username      as Username,
-        ///       sum(pri.weight) as TotalWeight,
-        ///       sum(od.amount)  as TotalPrice
-        ///from orders o
-        ///         join users u on u.id = o.user_id
-        ///         join orders_item oi on o.id = oi.order_id
-        ///         join product_item pri on oi.product_item_id = pri.id
-        ///         join operation op on o.id = op.order [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to with avaregeBuyPrice as (select o.user_id as    UserId,
+        ///                                avg(opd.amount) AvgAmount
+        ///                         from orders o
+        ///                                  join operation op on o.id = op.order_id
+        ///                                  join operation_detail opd on op.id = opd.operation_id
+        ///                         where o.user_id = @id
+        ///                         group by o.user_id),
+        ///     totalWeights as (select oi.order_id                   as OrderId,
+        ///                          [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GetOrdersByUserId {
             get {
@@ -378,7 +374,8 @@ namespace Repository.Scripts {
         ///       p.price  as Price,
         ///       p.status as Status
         ///from product p
-        ///         join client c on c.id = p.factory_id;.
+        ///         join client c on c.id = p.factory_id
+        ///order by p.id;.
         /// </summary>
         internal static string GetProducts {
             get {
@@ -396,7 +393,8 @@ namespace Repository.Scripts {
         ///       p.status as Status
         ///from product p
         ///         join client c on c.id = p.factory_id
-        ///where c.id = @id;.
+        ///where c.id = @id
+        ///order by p.id;.
         /// </summary>
         internal static string GetProductsByFactoryId {
             get {
@@ -422,6 +420,28 @@ namespace Repository.Scripts {
         internal static string GetProductsByTopSell {
             get {
                 return ResourceManager.GetString("GetProductsByTopSell", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to select u.id       as Id,
+        ///       u.username as Username,
+        ///       u.password as Password,
+        ///       r.name     as Role,
+        ///       c.id       as ClientId,
+        ///       c.name     as Name,
+        ///       c.address  as Address,
+        ///       c.inn      as INN,
+        ///       u.status   as Status
+        ///from users u
+        ///         join client c on c.id = u.client_id
+        ///         join role r on r.id = u.role_id
+        ///where u.client_id = @id
+        ///  and u.role_id &lt;&gt; 1.
+        /// </summary>
+        internal static string GetUserByClientId {
+            get {
+                return ResourceManager.GetString("GetUserByClientId", resourceCulture);
             }
         }
         

@@ -8,6 +8,8 @@ namespace Repository;
 public class UserRepository(IPostgresContext postgresContext) : IUserRepository
 {
     public async Task<List<User>> GetUsers() => await postgresContext.Select<User>(Scripts.Scripts.GetUsers);
+    
+    public async Task<User> GetUserByClientId(int id) => await postgresContext.Get<User>(Scripts.Scripts.GetUserByClientId, new {id});
 
     public async Task<bool> AddUser(User user, int roleId) => await postgresContext.Exec(Scripts.Scripts.AddUser, new
     {

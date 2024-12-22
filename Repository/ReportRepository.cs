@@ -14,7 +14,7 @@ public class ReportRepository(IPostgresContext postgresContext) : IReportReposit
         Items = JsonConvert.DeserializeObject<List<ReportItem>>(r.Items) ?? []
     }).ToList();
     
-    public async Task<List<Report>> GetUserReport(int id) => (await postgresContext.Select<DbReport>(Scripts.Scripts.GenerateReport, new {id})).Select(r => new Report
+    public async Task<List<Report>> GetUserReport(int id) => (await postgresContext.Select<DbReport>(Scripts.Scripts.GenerateUserReport, new {id})).Select(r => new Report
     {
         Date = r.Date,
         TotalPrice = r.TotalPrice,

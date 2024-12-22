@@ -10,4 +10,5 @@ public interface IUserRepository
     Task<int> AddClient(User user);
     Task<User> GetUserById(int id);
     Task<List<UserGroups>> GetUserGroups();
+    Task<User> GetUserByClientId(int id);
 }

@@ -130,4 +130,7 @@
     <data name="GetProductsByTopSell" type="System.Resources.ResXFileRef, System.Windows.Forms">
         <value>GetProductsByTopSell.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </data>
+    <data name="GetUserByClientId" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>GetUserByClientId.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
 </root>
