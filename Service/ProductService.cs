@@ -67,6 +67,8 @@ public class ProductService(IProductRepository productRepository, IOrderService 
         await Task.WhenAll(addItemsTasks);
         await Task.WhenAll(addImagesTasks);
         await Task.WhenAll(addMaterialsTasks);
+        
+        _ = await orderService.AddSupply(product);
 
         return true;
     }

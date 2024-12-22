@@ -8,4 +8,5 @@ public interface IOrderService
     Task<List<Order>> GetUserOrders(int userId);
     Task<bool> AddOrder(int userId);
     Task<bool> UpdateOrder(Guid orderId, OrderStatus status);
+    Task<bool> AddSupply(Product product);
 }
