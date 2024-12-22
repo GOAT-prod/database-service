@@ -57,6 +57,7 @@ public class OrderService(IOrderRepository orderRepository, ICartRepository cart
         
         var products = await productRepository.GetProductByFactoryId(product.FactoryId);
         product = products.LastOrDefault()!;
+        product.Items = await productRepository.GetProductItems(product.Id);
         
         var order = new Order
         {
