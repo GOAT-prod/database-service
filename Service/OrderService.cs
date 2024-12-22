@@ -42,6 +42,7 @@ public class OrderService(IOrderRepository orderRepository, ICartRepository cart
         
         _ = await orderRepository.AddOperation(operationId, order.Id);
         _ = await orderRepository.AddOperationDetail(Guid.NewGuid(), operationId, order.TotalPrice);
+        _ = await cartRepository.DeleteCartItems(orderingCartItems.Select(i => i.Id).ToList());
         
         return true;
     }
